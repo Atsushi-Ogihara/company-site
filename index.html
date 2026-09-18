@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スカイライン・テクノロジーズ株式会社 | ソフトウェア開発・DX支援</title>
+<meta name="description" content="スカイライン・テクノロジーズ株式会社は、クラウドネイティブな受託開発・SaaS開発・DX支援を手がける東京のソフトウェア開発会社です。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230b1a33'/><path d='M6 24V14l5-3v13zM13 24V9l6-4v19zM21 24v-8l5 3v5z' fill='%2338d6ff'/></svg>">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#hero" aria-label="スカイライン・テクノロジーズ ホーム">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M6 24V14l5-3v13zM13 24V9l6-4v19zM21 24v-8l5 3v5z"/>
+      </svg>
+      <span class="logo__text">
+        <strong>SKYLINE</strong>
+        <small>TECHNOLOGIES</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="メインナビゲーション">
+      <ul class="nav__list">
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#strength">強み</a></li>
+        <li><a href="#works">実績</a></li>
+        <li><a href="#company">会社概要</a></li>
+        <li><a href="#recruit">採用情報</a></li>
+        <li><a class="nav__cta" href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- ============ お知らせ ============ -->
+  <div class="news" id="news" role="region" aria-label="お知らせ">
+    <div class="container news__inner">
+      <p class="news__label"><span class="news__blink" aria-hidden="true"></span>お知らせ</p>
+
+      <ul class="news__list" id="news-list">
+        <li class="news__item is-active">
+          <time datetime="2026-09-16">2026.09.16</time>
+          <span class="news__tag news__tag--press">プレスリリース</span>
+          <span class="news__text">クラウド構成診断サービス「Skyline Cloud Assessment」の提供を開始しました</span>
+        </li>
+        <li class="news__item">
+          <time datetime="2026-09-08">2026.09.08</time>
+          <span class="news__tag news__tag--event">イベント</span>
+          <span class="news__text">技術カンファレンス「Skyline Dev Day 2026」を10月24日にオンライン開催します</span>
+        </li>
+        <li class="news__item">
+          <time datetime="2026-09-01">2026.09.01</time>
+          <span class="news__tag news__tag--info">重要</span>
+          <span class="news__text">福岡支社を移転・増床しました（新住所は会社概要をご覧ください）</span>
+        </li>
+        <li class="news__item">
+          <time datetime="2026-08-25">2026.08.25</time>
+          <span class="news__tag news__tag--recruit">採用</span>
+          <span class="news__text">2027年度 新卒エンジニア採用のエントリー受付を開始しました</span>
+        </li>
+      </ul>
+
+      <div class="news__ctrl">
+        <span class="news__count"><b id="news-index">1</b>/<span id="news-total">4</span></span>
+        <button class="news__toggle" id="news-toggle" aria-pressed="false" aria-label="お知らせの自動切り替えを一時停止する">
+          <svg class="news__icon news__icon--pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg>
+          <svg class="news__icon news__icon--play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+      <div class="hero__grid"></div>
+      <svg class="hero__skyline" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,320 L0,240 L60,240 L60,200 L120,200 L120,260 L190,260 L190,150 L240,150 L240,120 L290,120 L290,180 L350,180 L350,90 L400,90 L400,60 L430,60 L430,190 L500,190 L500,230 L560,230 L560,140 L620,140 L620,100 L660,100 L660,170 L720,170 L720,40 L760,40 L760,80 L810,80 L810,210 L870,210 L870,160 L930,160 L930,110 L980,110 L980,200 L1040,200 L1040,250 L1100,250 L1100,130 L1160,130 L1160,70 L1200,70 L1200,180 L1260,180 L1260,220 L1320,220 L1320,160 L1380,160 L1380,240 L1440,240 L1440,320 Z"/>
+      </svg>
+    </div>
+
+    <div class="container hero__inner">
+      <p class="hero__eyebrow" data-reveal>SOFTWARE DEVELOPMENT &amp; DX PARTNER</p>
+      <h1 class="hero__title" data-reveal>
+        技術の地平線を、<br>
+        <span class="grad">一段高いところへ。</span>
+      </h1>
+      <p class="hero__lead" data-reveal>
+        スカイライン・テクノロジーズは、クラウドネイティブな設計力と<br class="pc-only">
+        プロダクト思考で、企業のソフトウェア開発を最初の一行から支えるチームです。
+      </p>
+      <div class="hero__actions" data-reveal>
+        <a class="btn btn--primary" href="#contact">無料で相談する</a>
+        <a class="btn btn--ghost" href="#services">サービスを見る</a>
+      </div>
+
+      <dl class="hero__stats" data-reveal>
+        <div><dt>創業</dt><dd><span data-count="2014" data-suffix="">0</span><small>年</small></dd></div>
+        <div><dt>開発実績</dt><dd><span data-count="320" data-suffix="+">0</span><small>件</small></dd></div>
+        <div><dt>エンジニア比率</dt><dd><span data-count="78">0</span><small>%</small></dd></div>
+        <div><dt>継続取引率</dt><dd><span data-count="94">0</span><small>%</small></dd></div>
+      </dl>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>TypeScript</span><span>Go</span><span>Rust</span><span>Python</span><span>React</span><span>Next.js</span><span>Flutter</span><span>AWS</span><span>Google Cloud</span><span>Kubernetes</span><span>Terraform</span><span>PostgreSQL</span>
+        <span>TypeScript</span><span>Go</span><span>Rust</span><span>Python</span><span>React</span><span>Next.js</span><span>Flutter</span><span>AWS</span><span>Google Cloud</span><span>Kubernetes</span><span>Terraform</span><span>PostgreSQL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="container">
+      <header class="sec-head" data-reveal>
+        <p class="sec-head__label">Services</p>
+        <h2 class="sec-head__title">事業内容</h2>
+        <p class="sec-head__lead">要件定義から運用改善まで。フェーズを切らずに伴走します。</p>
+      </header>
+
+      <div class="cards">
+        <article class="card" data-reveal>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h12"/></svg>
+          </div>
+          <h3>受託システム開発</h3>
+          <p>業務基幹システムやWebアプリケーションを、アジャイルな短サイクルで開発。設計資料とテストを必ず成果物に含めます。</p>
+          <ul class="card__tags"><li>要件定義</li><li>アジャイル</li><li>内製化支援</li></ul>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16a4 4 0 0 1 1-7.9A5.5 5.5 0 0 1 16 7.5 4.5 4.5 0 0 1 19 16H4z"/><path d="M12 12v6M9.5 15.5 12 18l2.5-2.5"/></svg>
+          </div>
+          <h3>クラウド / SRE支援</h3>
+          <p>AWS・Google Cloud上のインフラをIaCで再構築。可観測性とCI/CDを整え、障害対応の属人化を解消します。</p>
+          <ul class="card__tags"><li>Terraform</li><li>Kubernetes</li><li>監視設計</li></ul>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+          </div>
+          <h3>SaaSプロダクト開発</h3>
+          <p>0→1の立ち上げが得意です。仮説検証用のプロトタイプを4週間で形にし、そのまま本番品質へ育てます。</p>
+          <ul class="card__tags"><li>MVP開発</li><li>UI/UX設計</li><li>グロース</li></ul>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3 5.6 18.4"/></svg>
+          </div>
+          <h3>AI / データ活用</h3>
+          <p>LLMを組み込んだ業務自動化や、データ基盤の整備を支援。PoCで終わらせず、運用コストまで含めて設計します。</p>
+          <ul class="card__tags"><li>LLM実装</li><li>データ基盤</li><li>業務自動化</li></ul>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17V9M12 17V5M17 17v-6"/><path d="M4 20h16"/></svg>
+          </div>
+          <h3>DXコンサルティング</h3>
+          <p>現場ヒアリングから始め、投資対効果の見える改善ロードマップを作成。技術選定の意思決定に必要な材料を揃えます。</p>
+          <ul class="card__tags"><li>業務分析</li><li>技術選定</li><li>ロードマップ</li></ul>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v5.5c0 4.5 3.4 7.4 8 8.5 4.6-1.1 8-4 8-8.5V7l-8-4z"/><path d="M9.2 12.2l2 2 3.6-3.8"/></svg>
+          </div>
+          <h3>セキュリティ診断</h3>
+          <p>リリース前の脆弱性診断とコードレビュー。検出だけでなく、修正パッチの実装まで開発チームと一緒に進めます。</p>
+          <ul class="card__tags"><li>脆弱性診断</li><li>コード監査</li><li>是正支援</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STRENGTH ============ -->
+  <section class="section section--alt" id="strength">
+    <div class="container">
+      <header class="sec-head" data-reveal>
+        <p class="sec-head__label">Our Strength</p>
+        <h2 class="sec-head__title">選ばれる3つの理由</h2>
+      </header>
+
+      <div class="strength">
+        <article class="strength__item" data-reveal>
+          <span class="strength__num">01</span>
+          <h3>全員が現役エンジニアのチーム</h3>
+          <p>営業担当が単独で見積もることはありません。実装を担うテックリードが初回打ち合わせから参加し、実現可能性とコストをその場で擦り合わせます。</p>
+        </article>
+        <article class="strength__item" data-reveal>
+          <span class="strength__num">02</span>
+          <h3>2週間スプリントの透明な進行</h3>
+          <p>進捗・課題・残作業をダッシュボードで常時公開。スプリントレビューには必ずお客様に同席いただき、方向修正のコストを最小化します。</p>
+        </article>
+        <article class="strength__item" data-reveal>
+          <span class="strength__num">03</span>
+          <h3>納品後の「運用できる」状態まで</h3>
+          <p>設計書・テスト・ランブックを標準成果物として整備。お客様チームへのハンズオン移管を行い、内製化を前提に引き渡します。</p>
+        </article>
+      </div>
+
+      <div class="flow" data-reveal>
+        <h3 class="flow__title">プロジェクトの進め方</h3>
+        <ol class="flow__list">
+          <li><span>01</span><b>無料相談</b><em>60分のヒアリング</em></li>
+          <li><span>02</span><b>企画・見積</b><em>2週間で提案</em></li>
+          <li><span>03</span><b>設計・開発</b><em>2週間スプリント</em></li>
+          <li><span>04</span><b>リリース</b><em>並行して移管</em></li>
+          <li><span>05</span><b>運用・改善</b><em>継続的な伴走</em></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORKS ============ -->
+  <section class="section" id="works">
+    <div class="container">
+      <header class="sec-head" data-reveal>
+        <p class="sec-head__label">Works</p>
+        <h2 class="sec-head__title">開発実績</h2>
+        <p class="sec-head__lead">※ 掲載内容は架空の事例です。</p>
+      </header>
+
+      <div class="works">
+        <article class="work" data-reveal>
+          <div class="work__thumb work__thumb--a" aria-hidden="true"><span>LOGISTICS</span></div>
+          <div class="work__body">
+            <p class="work__cat">物流 / 基幹システム刷新</p>
+            <h3>配車計画システムのクラウド移行</h3>
+            <p>オンプレミスのVBシステムをWebアプリへ再構築。配車計画の自動最適化を導入し、計画作成時間を<b>1日3時間 → 20分</b>に短縮しました。</p>
+            <ul class="work__stack"><li>Go</li><li>React</li><li>AWS</li></ul>
+          </div>
+        </article>
+
+        <article class="work" data-reveal>
+          <div class="work__thumb work__thumb--b" aria-hidden="true"><span>HEALTHCARE</span></div>
+          <div class="work__body">
+            <p class="work__cat">ヘルスケア / SaaS新規開発</p>
+            <h3>クリニック向け予約SaaSの立ち上げ</h3>
+            <p>MVPを4週間でリリースし、6か月で導入220院へ。マルチテナント設計と権限管理を初期から組み込み、増加する要望に耐える構造にしました。</p>
+            <ul class="work__stack"><li>TypeScript</li><li>Next.js</li><li>PostgreSQL</li></ul>
+          </div>
+        </article>
+
+        <article class="work" data-reveal>
+          <div class="work__thumb work__thumb--c" aria-hidden="true"><span>FINANCE</span></div>
+          <div class="work__body">
+            <p class="work__cat">金融 / データ基盤</p>
+            <h3>与信レポートの自動生成基盤</h3>
+            <p>散在していた審査データを統合し、LLMによる要約レポートを自動生成。アナリストの一次調査工数を<b>約62%削減</b>しました。</p>
+            <ul class="work__stack"><li>Python</li><li>BigQuery</li><li>LLM</li></ul>
+          </div>
+        </article>
+
+        <article class="work" data-reveal>
+          <div class="work__thumb work__thumb--d" aria-hidden="true"><span>RETAIL</span></div>
+          <div class="work__body">
+            <p class="work__cat">小売 / モバイルアプリ</p>
+            <h3>店舗スタッフ向け在庫アプリ</h3>
+            <p>iOS / Android同時開発で全国180店舗へ展開。オフライン対応の同期設計により、通信が不安定なバックヤードでも棚卸しを完結できます。</p>
+            <ul class="work__stack"><li>Flutter</li><li>Firebase</li><li>Go</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VOICE ============ -->
+  <section class="section section--alt" id="voice">
+    <div class="container">
+      <header class="sec-head" data-reveal>
+        <p class="sec-head__label">Client Voice</p>
+        <h2 class="sec-head__title">お客様の声</h2>
+      </header>
+      <div class="voices">
+        <blockquote class="voice" data-reveal>
+          <p>「できません」ではなく「この条件なら可能です」と代替案が必ず出てくる。社内の合意形成が驚くほど速く進みました。</p>
+          <footer><span class="voice__avatar" aria-hidden="true">M</span>製造業 / 情報システム部 部長</footer>
+        </blockquote>
+        <blockquote class="voice" data-reveal>
+          <p>スプリントごとに動くものが見えるので、経営会議で説明しやすい。初めての外部委託でしたが不安がありませんでした。</p>
+          <footer><span class="voice__avatar" aria-hidden="true">S</span>スタートアップ / 代表取締役</footer>
+        </blockquote>
+        <blockquote class="voice" data-reveal>
+          <p>納品後に残されたのがコードだけでなく、運用手順とノウハウだったことが大きい。今は自社チームで改修できています。</p>
+          <footer><span class="voice__avatar" aria-hidden="true">H</span>ヘルスケア / プロダクトマネージャー</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPANY ============ -->
+  <section class="section" id="company">
+    <div class="container">
+      <header class="sec-head" data-reveal>
+        <p class="sec-head__label">Company</p>
+        <h2 class="sec-head__title">会社概要</h2>
+      </header>
+
+      <div class="company">
+        <div class="company__message" data-reveal>
+          <h3>Mission</h3>
+          <p class="company__mission">ソフトウェアで、<br>働く景色を変える。</p>
+          <p>私たちは、目の前の業務にある「仕方なく続けている手作業」を一つずつ消していくことが、組織の可能性を最も確実に広げると考えています。技術は目的ではなく、その景色を変えるための道具です。だからこそ、流行りの技術を並べるのではなく、10年後も運用できる選択を提案します。</p>
+          <p class="company__sign">代表取締役 CEO　青木 遥</p>
+        </div>
+
+        <div class="company__table-wrap" data-reveal>
+          <table class="company__table">
+            <tbody>
+              <tr><th scope="row">会社名</th><td>スカイライン・テクノロジーズ株式会社<br><small>Skyline Technologies, Inc.</small></td></tr>
+              <tr><th scope="row">設立</th><td>2014年4月2日</td></tr>
+              <tr><th scope="row">代表者</th><td>代表取締役 CEO　青木 遥</td></tr>
+              <tr><th scope="row">資本金</th><td>4,800万円</td></tr>
+              <tr><th scope="row">従業員数</th><td>142名（2026年4月現在）</td></tr>
+              <tr><th scope="row">所在地</th><td>東京本社：東京都渋谷区桜丘町0-0-0 スカイラインビル8F<br>福岡支社：福岡県福岡市博多区博多駅前0-0-0</td></tr>
+              <tr><th scope="row">事業内容</th><td>受託ソフトウェア開発 / クラウド基盤構築・運用支援 / SaaSプロダクト開発 / DXコンサルティング / セキュリティ診断</td></tr>
+              <tr><th scope="row">取引銀行</th><td>桜丘みらい銀行 渋谷支店</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECRUIT ============ -->
+  <section class="section section--recruit" id="recruit">
+    <div class="container recruit">
+      <div class="recruit__body" data-reveal>
+        <p class="sec-head__label">Recruit</p>
+        <h2 class="sec-head__title">仲間を探しています</h2>
+        <p>「作って終わり」にしないものづくりに、腰を据えて取り組みたい方を歓迎します。フルリモート可・書籍購入補助・技術カンファレンス参加費全額支給。</p>
+        <ul class="recruit__jobs">
+          <li><b>バックエンドエンジニア</b><span>Go / TypeScript・正社員</span></li>
+          <li><b>フロントエンドエンジニア</b><span>React / Next.js・正社員</span></li>
+          <li><b>SRE</b><span>AWS / Kubernetes・正社員</span></li>
+          <li><b>プロダクトデザイナー</b><span>UI/UX・正社員 / 業務委託</span></li>
+        </ul>
+        <a class="btn btn--primary" href="#contact">カジュアル面談を申し込む</a>
+      </div>
+      <ul class="recruit__perks" data-reveal>
+        <li><b>フルリモート</b>全国どこからでも勤務可</li>
+        <li><b>裁量労働</b>コアタイム11:00–16:00</li>
+        <li><b>学習支援</b>書籍・登壇・資格を会社負担</li>
+        <li><b>技術投資日</b>毎月1日を改善・検証に充当</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <header class="sec-head" data-reveal>
+        <p class="sec-head__label">Contact</p>
+        <h2 class="sec-head__title">お問い合わせ</h2>
+        <p class="sec-head__lead">構想段階のご相談でも構いません。2営業日以内に担当エンジニアからご返信します。</p>
+      </header>
+
+      <div class="contact">
+        <form class="form" id="contact-form" novalidate data-reveal>
+          <div class="form__row">
+            <div class="field">
+              <label for="name">お名前 <span class="req">必須</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="山田 太郎">
+              <p class="field__error" data-error-for="name"></p>
+            </div>
+            <div class="field">
+              <label for="company">会社名</label>
+              <input type="text" id="company" name="company" autocomplete="organization" placeholder="株式会社スカイライン商事">
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="email">メールアドレス <span class="req">必須</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="taro@example.com">
+              <p class="field__error" data-error-for="email"></p>
+            </div>
+            <div class="field">
+              <label for="budget">ご予算</label>
+              <select id="budget" name="budget">
+                <option value="">未定 / 相談したい</option>
+                <option>〜300万円</option>
+                <option>300〜1,000万円</option>
+                <option>1,000〜3,000万円</option>
+                <option>3,000万円以上</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">ご相談内容 <span class="req">必須</span></label>
+            <textarea id="message" name="message" rows="6" required placeholder="現在の課題、実現したいこと、希望スケジュールなどをお書きください。"></textarea>
+            <p class="field__error" data-error-for="message"></p>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" id="agree" name="agree" required>
+            <span>個人情報の取り扱いに同意します <span class="req">必須</span></span>
+          </label>
+          <p class="field__error" data-error-for="agree"></p>
+
+          <button class="btn btn--primary btn--block" type="submit">送信する</button>
+          <p class="form__note">※ このサイトは架空の企業のデモです。送信内容はどこにも送信されません。</p>
+          <p class="form__done" id="form-done" role="status" hidden>送信ありがとうございます。担当者より2営業日以内にご連絡します。</p>
+        </form>
+
+        <aside class="contact__info" data-reveal>
+          <div class="info-card">
+            <h3>お電話でのご相談</h3>
+            <p class="info-card__tel">03-0000-0000</p>
+            <p>平日 10:00–18:00（年末年始を除く）</p>
+          </div>
+          <div class="info-card">
+            <h3>メール</h3>
+            <p><a href="mailto:contact@skyline-tech.example">contact@skyline-tech.example</a></p>
+          </div>
+          <div class="info-card">
+            <h3>東京本社</h3>
+            <p>〒150-0000<br>東京都渋谷区桜丘町0-0-0<br>スカイラインビル8F</p>
+            <p><small>JR渋谷駅 西口より徒歩5分</small></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a class="logo logo--footer" href="#hero">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M6 24V14l5-3v13zM13 24V9l6-4v19zM21 24v-8l5 3v5z"/>
+        </svg>
+        <span class="logo__text"><strong>SKYLINE</strong><small>TECHNOLOGIES</small></span>
+      </a>
+      <p>スカイライン・テクノロジーズ株式会社<br>東京都渋谷区桜丘町0-0-0 スカイラインビル8F</p>
+    </div>
+    <nav class="footer__nav" aria-label="フッターナビゲーション">
+      <ul>
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#strength">強み</a></li>
+        <li><a href="#works">実績</a></li>
+        <li><a href="#company">会社概要</a></li>
+        <li><a href="#recruit">採用情報</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="footer__copy">© 2026 Skyline Technologies, Inc. この企業・事例はすべて架空のものです。</p>
+</footer>
+
+<button class="totop" id="totop" aria-label="ページ上部へ戻る">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
